@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ZARA Style Page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --title-font: 'Cormorant Garamond', serif;
+      --body-font: 'Inter', sans-serif;
+      --dark: #1a1a1a;
+      --light: #ffffff;
+      --accent: #d3d3d3;
+      --soft-bg: #94754c;
+      --card-bg: #fafafa;
+    }
+
+    body {
+      background-color: var(--soft-bg);
+      color: var(--dark);
+      font-family: var(--body-font);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--light);
+      border-bottom: 1px solid var(--accent);
+      padding: 20px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .logo {
+      font-family: var(--title-font);
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    .nav-link {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    .nav-link a {
+      color: var(--dark);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    .nav-link a:hover {
+      color: #555;
+    }
+
+    .hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-image {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      filter: brightness(85%);
+    }
+    .hero-btn {
+      position: absolute;
+      bottom: 40px;
+      background-color: transparent;
+      color: var(--light);
+      border: 1px solid var(--light);
+      padding: 12px 30px;
+      text-transform: uppercase;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 2px;
+    }
+    .hero-btn:hover {
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    .main-content {
+      background-color: var(--card-bg);
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 50px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-family: var(--title-font);
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--dark);
+      margin-top: 0;
+      margin-bottom: 60px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      animation: slideIn 1.2s ease-out;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    .product-box {
+      display: inline-block;
+      width: 24%;
+      margin: 10px 0.5%;
+      text-align: left;
+      background-color: var(--light);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 6px;
+    }
+    .product-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .product-box img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 6px 6px 0 0;
+    }
+    .product-box h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--dark);
+      text-transform: uppercase;
+      margin: 10px;
+    }
+    .product-box p {
+      font-size: 14px;
+      color: #707070;
+      margin: 0 10px 10px;
+    }
+    .product-box button {
+      background-color: transparent;
+      color: var(--dark);
+      border: 1px solid var(--dark);
+      padding: 8px 15px;
+      text-transform: uppercase;
+      font-size: 12px;
+      cursor: pointer;
+      margin: 10px;
+      transition: all 0.3s ease;
+    }
+    .product-box button:hover {
+      background-color: var(--dark);
+      color: var(--light);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--dark);
+      color: var(--light);
+      padding: 25px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-top: 80px;
+      border-top: 2px solid var(--accent);
+    }
+
+    @media (max-width: 768px) {
+      .product-box { width: 48%; }
+      .hero-btn { font-size: 12px; padding: 10px 25px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="logo">ZARA STYLE PAGE</div>
+    <div class="nav-link"><a href="#">Home</a></div>
+    <div class="nav-link"><a href="#">Shop</a></div>
+    <div class="nav-link"><a href="#">About</a></div>
+  </div>
+
+  <div class="hero">
+    <img class="hero-image" src="https://placehold.co/1920x500/1a1a1a/fff?text=NEW+SEASON+COLLECTION" alt="Main Banner">
+    <button class="hero-btn">Shop Now</button>
+  </div>
+
+  <div class="main-content">
+    <h2>Our Best Selling Items</h2>
+
+    <div class="product-box">
+      <img src="C:\Users\hp\OneDrive\Desktop\MDM\blazer.webp" alt="Product 1">
+      <h3>Tailored Blazer</h3>
+      <p>$199.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-box">
+      <img src="C:\Users\hp\OneDrive\Desktop\MDM\satic skirt.jpeg" alt="Product 2">
+      <h3>Satin Midi Skirt</h3>
+      <p>$95.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-box">
+      <img src="C:\Users\hp\OneDrive\Desktop\MDM\boots.webp" alt="Product 3">
+      <h3>Leather Ankle Boot</h3>
+      <p>$240.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-box">
+      <img src="C:\Users\hp\OneDrive\Desktop\MDM\knit.jpg" alt="Product 4">
+      <h3>Oversized Wool Knit</h3>
+      <p>$150.00</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2024 All Rights Reserved.</p>
+  </div>
+
+</body>
+</html>
