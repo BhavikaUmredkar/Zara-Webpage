@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZARA | Modern Fashion</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" onclick="showPage('home')">ZARA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('home')">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('shop')">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('collection')">Collection</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('about')">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="active">
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>New Season Arrivals</h1>
+        <p>Discover the latest trends from ZARA</p>
+        <button class="btn btn-shop" onclick="showPage('shop')">Shop Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="container text-center">
+    <h2>Shop Our Collection</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" class="card-img-top">
+          <div class="card-body">
+            <h5>Casual Wear</h5>
+            <p>Comfortable and trendy styles for everyday wear.</p>
+            <button class="btn btn-dark">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm">
+          <img src="https://plus.unsplash.com/premium_photo-1675186049563-000f7ac02c44?auto=format&fit=crop&q=60&w=600" class="card-img-top">
+          <div class="card-body">
+            <h5>Formal Wear</h5>
+            <p>Refined and elegant outfits for every occasion.</p>
+            <button class="btn btn-dark">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1521334884684-d80222895322" class="card-img-top">
+          <div class="card-body">
+            <h5>Accessories</h5>
+            <p>Complete your look with our latest fashion accessories.</p>
+            <button class="btn btn-dark">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section id="collection" class="container text-center">
+    <h2>Latest Collection</h2>
+    <p>Our curated collection reflects ZARA’s dedication to simplicity, elegance, and modernity.</p>
+    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=60&w=600" width="500" height="600" class="img-fluid rounded mt-4" alt="Collection">
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container text-center">
+    <h2>About Us</h2>
+    <p>ZARA is a global fashion brand committed to sustainability and modern design.</p>
+    <p>Founded in 1975, ZARA continues to lead fashion innovation through quality and ethics.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container text-center">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Reach out with your queries or feedback.</p>
+
+    <form class="mx-auto p-4 shadow" style="max-width:500px; background-color:#f8f9fa; border-radius:10px;">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ZARA Store | Designed by Bhavika</p>
+  </footer>
+
+  <!-- Bootstrap JS + Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
